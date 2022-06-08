@@ -1,0 +1,17 @@
+plugins {
+	id 'java'
+	id 'io.quarkus' version '2.9.2.Final'
+}
+
+group 'org.acme' 
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform("io.quarkus:quarkus-bom:2.9.2.Final")
+    implementation project(':runtime')
+    testImplementation 'io.quarkus:quarkus-junit5'
+}

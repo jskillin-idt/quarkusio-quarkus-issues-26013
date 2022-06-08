@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-include 'deployment', 'runtime'
+include 'deployment', 'runtime', 'app'
 
 rootProject.name = 'greeting-extension'
